@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50AB22641CA960410026F240 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AB22631CA960410026F240 /* main.m */; };
+		50AB22671CA960410026F240 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AB22661CA960410026F240 /* AppDelegate.m */; };
+		50AB226A1CA960410026F240 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AB22691CA960410026F240 /* ViewController.m */; };
+		50AB226D1CA960410026F240 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50AB226B1CA960410026F240 /* Main.storyboard */; };
+		50AB22701CA960410026F240 /* RoposoTestApplication.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50AB226E1CA960410026F240 /* RoposoTestApplication.xcdatamodeld */; };
+		50AB22721CA960410026F240 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50AB22711CA960410026F240 /* Assets.xcassets */; };
+		50AB22751CA960410026F240 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50AB22731CA960410026F240 /* LaunchScreen.storyboard */; };
+		50AB22801CA960420026F240 /* RoposoTestApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AB227F1CA960420026F240 /* RoposoTestApplicationTests.m */; };
+		50AB228B1CA960420026F240 /* RoposoTestApplicationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AB228A1CA960420026F240 /* RoposoTestApplicationUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50AB227C1CA960420026F240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50AB22571CA9603F0026F240 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50AB225E1CA960400026F240;
+			remoteInfo = RoposoTestApplication;
+		};
+		50AB22871CA960420026F240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50AB22571CA9603F0026F240 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50AB225E1CA960400026F240;
+			remoteInfo = RoposoTestApplication;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		50AB225F1CA960410026F240 /* RoposoTestApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoposoTestApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50AB22631CA960410026F240 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		50AB22651CA960410026F240 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		50AB22661CA960410026F240 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		50AB22681CA960410026F240 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		50AB22691CA960410026F240 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		50AB226C1CA960410026F240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		50AB226F1CA960410026F240 /* RoposoTestApplication.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RoposoTestApplication.xcdatamodel; sourceTree = "<group>"; };
+		50AB22711CA960410026F240 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50AB22741CA960410026F240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		50AB22761CA960410026F240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50AB227B1CA960420026F240 /* RoposoTestApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoposoTestApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50AB227F1CA960420026F240 /* RoposoTestApplicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoposoTestApplicationTests.m; sourceTree = "<group>"; };
+		50AB22811CA960420026F240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50AB22861CA960420026F240 /* RoposoTestApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoposoTestApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50AB228A1CA960420026F240 /* RoposoTestApplicationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoposoTestApplicationUITests.m; sourceTree = "<group>"; };
+		50AB228C1CA960420026F240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50AB225C1CA960400026F240 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50AB22781CA960420026F240 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50AB22831CA960420026F240 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50AB22561CA9603F0026F240 = {
+			isa = PBXGroup;
+			children = (
+				50AB22611CA960410026F240 /* RoposoTestApplication */,
+				50AB227E1CA960420026F240 /* RoposoTestApplicationTests */,
+				50AB22891CA960420026F240 /* RoposoTestApplicationUITests */,
+				50AB22601CA960410026F240 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50AB22601CA960410026F240 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50AB225F1CA960410026F240 /* RoposoTestApplication.app */,
+				50AB227B1CA960420026F240 /* RoposoTestApplicationTests.xctest */,
+				50AB22861CA960420026F240 /* RoposoTestApplicationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50AB22611CA960410026F240 /* RoposoTestApplication */ = {
+			isa = PBXGroup;
+			children = (
+				50AB22651CA960410026F240 /* AppDelegate.h */,
+				50AB22661CA960410026F240 /* AppDelegate.m */,
+				50AB22681CA960410026F240 /* ViewController.h */,
+				50AB22691CA960410026F240 /* ViewController.m */,
+				50AB226B1CA960410026F240 /* Main.storyboard */,
+				50AB22711CA960410026F240 /* Assets.xcassets */,
+				50AB22731CA960410026F240 /* LaunchScreen.storyboard */,
+				50AB22761CA960410026F240 /* Info.plist */,
+				50AB226E1CA960410026F240 /* RoposoTestApplication.xcdatamodeld */,
+				50AB22621CA960410026F240 /* Supporting Files */,
+			);
+			path = RoposoTestApplication;
+			sourceTree = "<group>";
+		};
+		50AB22621CA960410026F240 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50AB22631CA960410026F240 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50AB227E1CA960420026F240 /* RoposoTestApplicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				50AB227F1CA960420026F240 /* RoposoTestApplicationTests.m */,
+				50AB22811CA960420026F240 /* Info.plist */,
+			);
+			path = RoposoTestApplicationTests;
+			sourceTree = "<group>";
+		};
+		50AB22891CA960420026F240 /* RoposoTestApplicationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				50AB228A1CA960420026F240 /* RoposoTestApplicationUITests.m */,
+				50AB228C1CA960420026F240 /* Info.plist */,
+			);
+			path = RoposoTestApplicationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50AB225E1CA960400026F240 /* RoposoTestApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50AB228F1CA960420026F240 /* Build configuration list for PBXNativeTarget "RoposoTestApplication" */;
+			buildPhases = (
+				50AB225B1CA960400026F240 /* Sources */,
+				50AB225C1CA960400026F240 /* Frameworks */,
+				50AB225D1CA960400026F240 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoposoTestApplication;
+			productName = RoposoTestApplication;
+			productReference = 50AB225F1CA960410026F240 /* RoposoTestApplication.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50AB227A1CA960420026F240 /* RoposoTestApplicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50AB22921CA960420026F240 /* Build configuration list for PBXNativeTarget "RoposoTestApplicationTests" */;
+			buildPhases = (
+				50AB22771CA960420026F240 /* Sources */,
+				50AB22781CA960420026F240 /* Frameworks */,
+				50AB22791CA960420026F240 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50AB227D1CA960420026F240 /* PBXTargetDependency */,
+			);
+			name = RoposoTestApplicationTests;
+			productName = RoposoTestApplicationTests;
+			productReference = 50AB227B1CA960420026F240 /* RoposoTestApplicationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		50AB22851CA960420026F240 /* RoposoTestApplicationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50AB22951CA960420026F240 /* Build configuration list for PBXNativeTarget "RoposoTestApplicationUITests" */;
+			buildPhases = (
+				50AB22821CA960420026F240 /* Sources */,
+				50AB22831CA960420026F240 /* Frameworks */,
+				50AB22841CA960420026F240 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50AB22881CA960420026F240 /* PBXTargetDependency */,
+			);
+			name = RoposoTestApplicationUITests;
+			productName = RoposoTestApplicationUITests;
+			productReference = 50AB22861CA960420026F240 /* RoposoTestApplicationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50AB22571CA9603F0026F240 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Suraj Kumar";
+				TargetAttributes = {
+					50AB225E1CA960400026F240 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = T2735B7BZ6;
+					};
+					50AB227A1CA960420026F240 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = T2735B7BZ6;
+						TestTargetID = 50AB225E1CA960400026F240;
+					};
+					50AB22851CA960420026F240 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = T2735B7BZ6;
+						TestTargetID = 50AB225E1CA960400026F240;
+					};
+				};
+			};
+			buildConfigurationList = 50AB225A1CA9603F0026F240 /* Build configuration list for PBXProject "RoposoTestApplication" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50AB22561CA9603F0026F240;
+			productRefGroup = 50AB22601CA960410026F240 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50AB225E1CA960400026F240 /* RoposoTestApplication */,
+				50AB227A1CA960420026F240 /* RoposoTestApplicationTests */,
+				50AB22851CA960420026F240 /* RoposoTestApplicationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50AB225D1CA960400026F240 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50AB22751CA960410026F240 /* LaunchScreen.storyboard in Resources */,
+				50AB22721CA960410026F240 /* Assets.xcassets in Resources */,
+				50AB226D1CA960410026F240 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50AB22791CA960420026F240 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50AB22841CA960420026F240 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50AB225B1CA960400026F240 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50AB22701CA960410026F240 /* RoposoTestApplication.xcdatamodeld in Sources */,
+				50AB226A1CA960410026F240 /* ViewController.m in Sources */,
+				50AB22671CA960410026F240 /* AppDelegate.m in Sources */,
+				50AB22641CA960410026F240 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50AB22771CA960420026F240 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50AB22801CA960420026F240 /* RoposoTestApplicationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50AB22821CA960420026F240 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50AB228B1CA960420026F240 /* RoposoTestApplicationUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50AB227D1CA960420026F240 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50AB225E1CA960400026F240 /* RoposoTestApplication */;
+			targetProxy = 50AB227C1CA960420026F240 /* PBXContainerItemProxy */;
+		};
+		50AB22881CA960420026F240 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50AB225E1CA960400026F240 /* RoposoTestApplication */;
+			targetProxy = 50AB22871CA960420026F240 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		50AB226B1CA960410026F240 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50AB226C1CA960410026F240 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		50AB22731CA960410026F240 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50AB22741CA960410026F240 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50AB228D1CA960420026F240 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50AB228E1CA960420026F240 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50AB22901CA960420026F240 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RoposoTestApplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.testApp.RoposoTestApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		50AB22911CA960420026F240 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RoposoTestApplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.testApp.RoposoTestApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		50AB22931CA960420026F240 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RoposoTestApplicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.testApp.RoposoTestApplicationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoposoTestApplication.app/RoposoTestApplication";
+			};
+			name = Debug;
+		};
+		50AB22941CA960420026F240 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RoposoTestApplicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.testApp.RoposoTestApplicationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoposoTestApplication.app/RoposoTestApplication";
+			};
+			name = Release;
+		};
+		50AB22961CA960420026F240 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RoposoTestApplicationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.testApp.RoposoTestApplicationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RoposoTestApplication;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		50AB22971CA960420026F240 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RoposoTestApplicationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.testApp.RoposoTestApplicationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RoposoTestApplication;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50AB225A1CA9603F0026F240 /* Build configuration list for PBXProject "RoposoTestApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50AB228D1CA960420026F240 /* Debug */,
+				50AB228E1CA960420026F240 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50AB228F1CA960420026F240 /* Build configuration list for PBXNativeTarget "RoposoTestApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50AB22901CA960420026F240 /* Debug */,
+				50AB22911CA960420026F240 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		50AB22921CA960420026F240 /* Build configuration list for PBXNativeTarget "RoposoTestApplicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50AB22931CA960420026F240 /* Debug */,
+				50AB22941CA960420026F240 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		50AB22951CA960420026F240 /* Build configuration list for PBXNativeTarget "RoposoTestApplicationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50AB22961CA960420026F240 /* Debug */,
+				50AB22971CA960420026F240 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		50AB226E1CA960410026F240 /* RoposoTestApplication.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				50AB226F1CA960410026F240 /* RoposoTestApplication.xcdatamodel */,
+			);
+			currentVersion = 50AB226F1CA960410026F240 /* RoposoTestApplication.xcdatamodel */;
+			path = RoposoTestApplication.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 50AB22571CA9603F0026F240 /* Project object */;
+}
