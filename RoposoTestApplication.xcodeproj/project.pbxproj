@@ -10,13 +10,18 @@
 		2966C158F6D9A3F813A847B3 /* libPods-RoposoTestApplication.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A8B1B497CDB0AAD8CA7108 /* libPods-RoposoTestApplication.a */; };
 		50AB22641CA960410026F240 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AB22631CA960410026F240 /* main.m */; };
 		50AB22671CA960410026F240 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AB22661CA960410026F240 /* AppDelegate.m */; };
-		50AB226A1CA960410026F240 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AB22691CA960410026F240 /* ViewController.m */; };
 		50AB226D1CA960410026F240 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50AB226B1CA960410026F240 /* Main.storyboard */; };
 		50AB22701CA960410026F240 /* RoposoTestApplication.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50AB226E1CA960410026F240 /* RoposoTestApplication.xcdatamodeld */; };
 		50AB22721CA960410026F240 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50AB22711CA960410026F240 /* Assets.xcassets */; };
 		50AB22751CA960410026F240 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50AB22731CA960410026F240 /* LaunchScreen.storyboard */; };
 		50AB22801CA960420026F240 /* RoposoTestApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AB227F1CA960420026F240 /* RoposoTestApplicationTests.m */; };
 		50AB228B1CA960420026F240 /* RoposoTestApplicationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AB228A1CA960420026F240 /* RoposoTestApplicationUITests.m */; };
+		50AB229A1CA96CF60026F240 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AB22991CA96CF60026F240 /* HomeViewController.m */; };
+		50AB229C1CA96D4A0026F240 /* iOS_Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 50AB229B1CA96D490026F240 /* iOS_Data.json */; };
+		50AB22A61CA96F650026F240 /* UserData+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AB229F1CA96F650026F240 /* UserData+CoreDataProperties.m */; };
+		50AB22A71CA96F650026F240 /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AB22A11CA96F650026F240 /* UserData.m */; };
+		50AB22A81CA96F650026F240 /* StoryDescription+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AB22A31CA96F650026F240 /* StoryDescription+CoreDataProperties.m */; };
+		50AB22A91CA96F650026F240 /* StoryDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AB22A51CA96F650026F240 /* StoryDescription.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +47,6 @@
 		50AB22631CA960410026F240 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		50AB22651CA960410026F240 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		50AB22661CA960410026F240 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		50AB22681CA960410026F240 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		50AB22691CA960410026F240 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		50AB226C1CA960410026F240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50AB226F1CA960410026F240 /* RoposoTestApplication.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RoposoTestApplication.xcdatamodel; sourceTree = "<group>"; };
 		50AB22711CA960410026F240 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,6 +58,17 @@
 		50AB22861CA960420026F240 /* RoposoTestApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoposoTestApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50AB228A1CA960420026F240 /* RoposoTestApplicationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoposoTestApplicationUITests.m; sourceTree = "<group>"; };
 		50AB228C1CA960420026F240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50AB22981CA96CF60026F240 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		50AB22991CA96CF60026F240 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		50AB229B1CA96D490026F240 /* iOS_Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = iOS_Data.json; sourceTree = "<group>"; };
+		50AB229E1CA96F650026F240 /* UserData+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UserData+CoreDataProperties.h"; sourceTree = "<group>"; };
+		50AB229F1CA96F650026F240 /* UserData+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UserData+CoreDataProperties.m"; sourceTree = "<group>"; };
+		50AB22A01CA96F650026F240 /* UserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
+		50AB22A11CA96F650026F240 /* UserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserData.m; sourceTree = "<group>"; };
+		50AB22A21CA96F650026F240 /* StoryDescription+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StoryDescription+CoreDataProperties.h"; sourceTree = "<group>"; };
+		50AB22A31CA96F650026F240 /* StoryDescription+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "StoryDescription+CoreDataProperties.m"; sourceTree = "<group>"; };
+		50AB22A41CA96F650026F240 /* StoryDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryDescription.h; sourceTree = "<group>"; };
+		50AB22A51CA96F650026F240 /* StoryDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryDescription.m; sourceTree = "<group>"; };
 		9072FFA0CFC1E47CE4EA27B2 /* Pods-RoposoTestApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoposoTestApplication.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RoposoTestApplication/Pods-RoposoTestApplication.debug.xcconfig"; sourceTree = "<group>"; };
 		FDF7504F089C6DC1CC6E69CC /* Pods-RoposoTestApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoposoTestApplication.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoposoTestApplication/Pods-RoposoTestApplication.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,12 +132,14 @@
 		50AB22611CA960410026F240 /* RoposoTestApplication */ = {
 			isa = PBXGroup;
 			children = (
+				50AB229D1CA96F4C0026F240 /* DataModelClasses */,
 				50AB22651CA960410026F240 /* AppDelegate.h */,
 				50AB22661CA960410026F240 /* AppDelegate.m */,
-				50AB22681CA960410026F240 /* ViewController.h */,
-				50AB22691CA960410026F240 /* ViewController.m */,
+				50AB22981CA96CF60026F240 /* HomeViewController.h */,
+				50AB22991CA96CF60026F240 /* HomeViewController.m */,
 				50AB226B1CA960410026F240 /* Main.storyboard */,
 				50AB22711CA960410026F240 /* Assets.xcassets */,
+				50AB229B1CA96D490026F240 /* iOS_Data.json */,
 				50AB22731CA960410026F240 /* LaunchScreen.storyboard */,
 				50AB22761CA960410026F240 /* Info.plist */,
 				50AB226E1CA960410026F240 /* RoposoTestApplication.xcdatamodeld */,
@@ -156,6 +172,21 @@
 				50AB228C1CA960420026F240 /* Info.plist */,
 			);
 			path = RoposoTestApplicationUITests;
+			sourceTree = "<group>";
+		};
+		50AB229D1CA96F4C0026F240 /* DataModelClasses */ = {
+			isa = PBXGroup;
+			children = (
+				50AB229E1CA96F650026F240 /* UserData+CoreDataProperties.h */,
+				50AB229F1CA96F650026F240 /* UserData+CoreDataProperties.m */,
+				50AB22A01CA96F650026F240 /* UserData.h */,
+				50AB22A11CA96F650026F240 /* UserData.m */,
+				50AB22A21CA96F650026F240 /* StoryDescription+CoreDataProperties.h */,
+				50AB22A31CA96F650026F240 /* StoryDescription+CoreDataProperties.m */,
+				50AB22A41CA96F650026F240 /* StoryDescription.h */,
+				50AB22A51CA96F650026F240 /* StoryDescription.m */,
+			);
+			path = DataModelClasses;
 			sourceTree = "<group>";
 		};
 		54323DC74F62091525A45272 /* Pods */ = {
@@ -277,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50AB22751CA960410026F240 /* LaunchScreen.storyboard in Resources */,
+				50AB229C1CA96D4A0026F240 /* iOS_Data.json in Resources */,
 				50AB22721CA960410026F240 /* Assets.xcassets in Resources */,
 				50AB226D1CA960410026F240 /* Main.storyboard in Resources */,
 			);
@@ -352,9 +384,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				50AB22701CA960410026F240 /* RoposoTestApplication.xcdatamodeld in Sources */,
-				50AB226A1CA960410026F240 /* ViewController.m in Sources */,
 				50AB22671CA960410026F240 /* AppDelegate.m in Sources */,
+				50AB22A91CA96F650026F240 /* StoryDescription.m in Sources */,
+				50AB22A61CA96F650026F240 /* UserData+CoreDataProperties.m in Sources */,
 				50AB22641CA960410026F240 /* main.m in Sources */,
+				50AB22A71CA96F650026F240 /* UserData.m in Sources */,
+				50AB22A81CA96F650026F240 /* StoryDescription+CoreDataProperties.m in Sources */,
+				50AB229A1CA96CF60026F240 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
