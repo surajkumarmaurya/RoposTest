@@ -14,7 +14,7 @@
 @implementation UserData (CoreDataProperties)
 
 @dynamic about;
-@dynamic id;
+@dynamic userID;
 @dynamic userName;
 @dynamic followers;
 @dynamic following;

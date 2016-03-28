@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UserData (CoreDataProperties)
 
 @property (nullable, nonatomic, retain) NSString *about;
-@property (nullable, nonatomic, retain) NSString *id;
+@property (nullable, nonatomic, retain) NSString *userID;
 @property (nullable, nonatomic, retain) NSString *userName;
 @property (nullable, nonatomic, retain) NSNumber *followers;
 @property (nullable, nonatomic, retain) NSNumber *following;

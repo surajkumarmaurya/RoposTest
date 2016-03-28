@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface StoryDescription (CoreDataProperties)
 
 @property (nullable, nonatomic, retain) NSString *storyDescription;
-@property (nullable, nonatomic, retain) NSString *id;
+@property (nullable, nonatomic, retain) NSString *storyID;
 @property (nullable, nonatomic, retain) NSString *verb;
 @property (nullable, nonatomic, retain) NSString *db;
 @property (nullable, nonatomic, retain) NSString *url;

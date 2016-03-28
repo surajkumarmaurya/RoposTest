@@ -22,6 +22,7 @@
 		50AB22A71CA96F650026F240 /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AB22A11CA96F650026F240 /* UserData.m */; };
 		50AB22A81CA96F650026F240 /* StoryDescription+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AB22A31CA96F650026F240 /* StoryDescription+CoreDataProperties.m */; };
 		50AB22A91CA96F650026F240 /* StoryDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AB22A51CA96F650026F240 /* StoryDescription.m */; };
+		50F751041CA9A5C40065F7AA /* ListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F751031CA9A5C40065F7AA /* ListViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		50AB22A31CA96F650026F240 /* StoryDescription+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "StoryDescription+CoreDataProperties.m"; sourceTree = "<group>"; };
 		50AB22A41CA96F650026F240 /* StoryDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryDescription.h; sourceTree = "<group>"; };
 		50AB22A51CA96F650026F240 /* StoryDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryDescription.m; sourceTree = "<group>"; };
+		50F751021CA9A5C40065F7AA /* ListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewCell.h; sourceTree = "<group>"; };
+		50F751031CA9A5C40065F7AA /* ListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewCell.m; sourceTree = "<group>"; };
 		9072FFA0CFC1E47CE4EA27B2 /* Pods-RoposoTestApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoposoTestApplication.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RoposoTestApplication/Pods-RoposoTestApplication.debug.xcconfig"; sourceTree = "<group>"; };
 		FDF7504F089C6DC1CC6E69CC /* Pods-RoposoTestApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoposoTestApplication.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoposoTestApplication/Pods-RoposoTestApplication.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,6 +141,8 @@
 				50AB22981CA96CF60026F240 /* HomeViewController.h */,
 				50AB22991CA96CF60026F240 /* HomeViewController.m */,
 				50AB226B1CA960410026F240 /* Main.storyboard */,
+				50F751021CA9A5C40065F7AA /* ListViewCell.h */,
+				50F751031CA9A5C40065F7AA /* ListViewCell.m */,
 				50AB22711CA960410026F240 /* Assets.xcassets */,
 				50AB229B1CA96D490026F240 /* iOS_Data.json */,
 				50AB22731CA960410026F240 /* LaunchScreen.storyboard */,
@@ -387,6 +392,7 @@
 				50AB22671CA960410026F240 /* AppDelegate.m in Sources */,
 				50AB22A91CA96F650026F240 /* StoryDescription.m in Sources */,
 				50AB22A61CA96F650026F240 /* UserData+CoreDataProperties.m in Sources */,
+				50F751041CA9A5C40065F7AA /* ListViewCell.m in Sources */,
 				50AB22641CA960410026F240 /* main.m in Sources */,
 				50AB22A71CA96F650026F240 /* UserData.m in Sources */,
 				50AB22A81CA96F650026F240 /* StoryDescription+CoreDataProperties.m in Sources */,

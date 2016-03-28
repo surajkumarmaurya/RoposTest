@@ -14,7 +14,7 @@
 @implementation StoryDescription (CoreDataProperties)
 
 @dynamic storyDescription;
-@dynamic id;
+@dynamic storyID;
 @dynamic verb;
 @dynamic db;
 @dynamic url;
