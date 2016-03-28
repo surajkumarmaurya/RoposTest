@@ -11,6 +11,7 @@
 #import "ListViewCell.h"
 #import "UserData.h"
 #import "StoryDescription.h"
+#import "DetailViewController.h"
 #import <UIImageView+AFNetworking.h>
 
 @interface HomeViewController ()
@@ -24,8 +25,22 @@
     [super viewDidLoad];
     self.navigationItem.title = @"Home";
     [self accessJSONFileAndSaveData];
-    self.storyArray = [self fetchStoryData];
     self.listViewTable.estimatedRowHeight = 150;
+    
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    self.navigationController.navigationBar.barStyle=UIBarStyleBlackTranslucent;
+    
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    
+    self.navigationController.navigationBar.barTintColor = [UIColor blueColor];
+
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.storyArray = [self fetchStoryData];
+    [self.listViewTable reloadData];
 }
 
 -(void)deleteEntitiesForName:(NSString *)entityName{
@@ -217,6 +232,14 @@
         return [results lastObject];
     }else
         return nil;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    DetailViewController *detailVC = (DetailViewController *)[storyBoard instantiateViewControllerWithIdentifier:@"DetailView"];
+    detailVC.storyObject = (StoryDescription *)self.storyArray[indexPath.row];
+    detailVC.userObject = (UserData *)[self fetchUserProfileDataForID:detailVC.storyObject.db];
+    [self.navigationController pushViewController:detailVC animated:true];
 }
 
 - (void)didReceiveMemoryWarning {
