@@ -11,6 +11,7 @@
 #import "ListViewCell.h"
 #import "UserData.h"
 #import "StoryDescription.h"
+#import <UIImageView+AFNetworking.h>
 
 @interface HomeViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *listViewTable;
@@ -21,16 +22,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title = @"Home";
     [self accessJSONFileAndSaveData];
     self.storyArray = [self fetchStoryData];
+    self.listViewTable.estimatedRowHeight = 150;
+}
+
+-(void)deleteEntitiesForName:(NSString *)entityName{
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:entityName inManagedObjectContext:appDelegate.managedObjectContext];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entity];
+    
+    NSError *error = nil;
+    NSArray *results = [appDelegate.managedObjectContext executeFetchRequest:request error:&error];
+    
+    for (NSManagedObject *object in results) {
+        [appDelegate.managedObjectContext deleteObject:object];
+    }
 }
 
 -(void)accessJSONFileAndSaveData{
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"filename" ofType:@"json"];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"iOS_Data" ofType:@"json"];
     NSData *jsonData = [NSData dataWithContentsOfFile:filePath];
     NSArray *dataArray = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:nil];
+    
+    [self deleteEntitiesForName:@"UserData"];
+    [self deleteEntitiesForName:@"StoryDescription"];
+    [(AppDelegate *)[[UIApplication sharedApplication] delegate] saveContext];
+    
     for (NSDictionary *dataDict in dataArray) {
-        if ([dataDict valueForKey:@""]) {
+        if ([[dataDict valueForKey:@"type"] isEqualToString:@"story"]) {
             [self saveStoryData:dataDict];
         }else{
             [self saveUserData:dataDict];
@@ -105,8 +127,97 @@
 }
 
 -(void)configureCellForIndexPath:(NSIndexPath *)indexPath andCell:(ListViewCell *)cell{
+    
+    StoryDescription *storyObject = (StoryDescription *)self.storyArray[indexPath.row];
+    UserData *userObject = (UserData *)[self fetchUserProfileDataForID:storyObject.db];
+    
+    cell.userNameLabel.text = userObject.userName;
+    cell.storyTimeLabel.text = storyObject.verb;
+    cell.storyTitleLabel.text = storyObject.title;
+    cell.storyDescriptionLabel.text = storyObject.storyDescription;
+    
+    [cell.followButton addTarget:self action:@selector(followButtonPressed:) forControlEvents:UIControlEventTouchDown];
+    
+    cell.followButton.layer.cornerRadius = 4.0;
+    cell.followButton.layer.borderWidth = 1.0;
+    cell.followButton.layer.borderColor = [UIColor blackColor].CGColor;
+    
+    if ([userObject.is_following boolValue]) {
+        [cell.followButton setBackgroundColor:[UIColor greenColor]];
+        [cell.followButton setTitle:@"Following" forState:UIControlStateNormal];
+        [cell.followButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    }else{
+        [cell.followButton setBackgroundColor:[UIColor whiteColor]];
+        [cell.followButton setTitle:@"Follow" forState:UIControlStateNormal];
+        [cell.followButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    }
+    
+    NSURL *url = [NSURL URLWithString:storyObject.si];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    __weak ListViewCell *weakCell = cell;
+    
+    cell.storyImageView.layer.cornerRadius = 0.0;
+    cell.storyImageView.layer.borderColor = [UIColor whiteColor].CGColor;
+    cell.storyImageView.layer.borderWidth = 0.0;
+    cell.storyImageView.image = nil;
+    
+    [cell.activityIndicator startAnimating];
+    [cell.storyImageView setImageWithURLRequest:request
+                          placeholderImage:nil
+                                   success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
+                                       weakCell.storyImageView.image = image;
+                                       [weakCell.activityIndicator stopAnimating];
+                                       weakCell.storyImageView.layer.cornerRadius = 4.0;
+                                       weakCell.storyImageView.layer.borderColor = [UIColor blackColor].CGColor;
+                                       weakCell.storyImageView.layer.borderWidth = 1.0;
+                                       [weakCell setNeedsLayout];
+                                   } failure:nil];
 }
 
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
+    [(ListViewCell *)cell.contentView layoutSubviews];
+    
+    UIBezierPath *shadowPath = [UIBezierPath bezierPathWithRect:((ListViewCell *)cell).cellBgView.bounds];
+    ((ListViewCell *)cell).cellBgView.layer.masksToBounds = NO;
+    ((ListViewCell *)cell).cellBgView.layer.shadowColor = [UIColor blackColor].CGColor;
+    ((ListViewCell *)cell).cellBgView.layer.shadowOffset = CGSizeMake(0.0f, 0.0f);
+    ((ListViewCell *)cell).cellBgView.layer.shadowOpacity = 0.5f;
+    ((ListViewCell *)cell).cellBgView.layer.shadowPath = shadowPath.CGPath;
+}
+
+-(void)followButtonPressed:(UIButton *)sender{
+    NSIndexPath *indexPath = [self.listViewTable indexPathForRowAtPoint:[self.listViewTable convertPoint:sender.center fromView:sender.superview]];
+    StoryDescription *storyObject = (StoryDescription *)self.storyArray[indexPath.row];
+    UserData *userObject = (UserData *)[self fetchUserProfileDataForID:storyObject.db];
+    if ([userObject.is_following boolValue]) {
+        userObject.is_following = [NSNumber numberWithBool:NO];
+    }else{
+        userObject.is_following = [NSNumber numberWithBool:YES];
+    }
+    [(AppDelegate *)[[UIApplication sharedApplication] delegate] saveContext];
+    self.storyArray = [self fetchStoryData];
+    [self.listViewTable reloadData];
+    [self.listViewTable scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionBottom animated:false];
+}
+
+-(NSArray *)fetchUserProfileDataForID:(NSString *)userID{
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"UserData" inManagedObjectContext:appDelegate.managedObjectContext];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entity];
+    
+    NSPredicate *predicateName = [NSPredicate predicateWithFormat:@"userID = %@",userID];
+    [request setPredicate:predicateName];
+    
+    NSError *error = nil;
+    NSArray *results = [appDelegate.managedObjectContext executeFetchRequest:request error:&error];
+    if (error == nil){
+        return [results lastObject];
+    }else
+        return nil;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -11,6 +11,7 @@
 @implementation ListViewCell
 
 - (void)awakeFromNib {
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
     // Initialization code
 }
 

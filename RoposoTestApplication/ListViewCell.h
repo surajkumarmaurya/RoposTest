@@ -13,7 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIView *userNameBgView;
 @property (weak, nonatomic) IBOutlet UIView *storyTimeBgView;
 @property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
-@property (weak, nonatomic) IBOutlet UIButton *followButtonLabel;
+@property (weak, nonatomic) IBOutlet UIButton *followButton;
 @property (weak, nonatomic) IBOutlet UILabel *storyTimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *storyTitleLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *storyImageView;
